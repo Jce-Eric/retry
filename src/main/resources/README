@@ -1,0 +1,4 @@
+使用步骤
+1.配置spring,开始基于aspectJ的注解式切面编程
+2.编写需要重试的方法doThing，方法上加上@RetryDot，方法上最好声明抛出RetryFailException
+3.(可选)编写重试条件的方法doTest，注意方法的返回值为boolean,方法的参数为空或者等于doThing的返回值
